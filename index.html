@@ -16,17 +16,17 @@
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/emon.kuet/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/mehedi-hasan-emon-7a5502205/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="mh.emonpersonal@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/scorpius72/"><i class="ti-github" aria-hidden="true"></i></a></li>
             </ul>  
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Emon</h1>
                 <h6 class="header-mono" >Competitive Programmer | Full-Stack Web Developer</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+                <button class="btn btn-primary btn-rounded" onclick="downloadPDF()"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </header>
@@ -88,11 +88,11 @@
                     <li><span>Address</span> :  Khan Jahan Ali, KUET</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/emon.kuet/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/mehedi-hasan-emon-7a5502205/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="mh.emonpersonal@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
                     <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/scorpius72/"><i class="ti-github" aria-hidden="true"></i></a></li>
                 </ul>  
             </div>
             <div class="col-lg-4 about-card">
@@ -754,11 +754,11 @@
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/emon.kuet/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/mehedi-hasan-emon-7a5502205/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="mh.emonpersonal@gmail.com"><i class="ti-google" aria-hidden="true"></i></a></li>
                             <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/scorpius72/"><i class="ti-github" aria-hidden="true"></i></a></li>
                         </ul> 
                     </div>
                 </div>
@@ -773,6 +773,31 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        function downloadPDF() {
+          // Replace 'path/to/your/resume.pdf' with the actual path to your PDF file
+          var pdfPath = 'MD_Mehedi_Hasan_Emon_resume.pdf';
+        
+          // Create an anchor element
+          var link = document.createElement('a');
+        
+          // Set the href attribute to the path of the PDF file
+          link.href = pdfPath;
+        
+          // Set the download attribute with the desired file name
+          link.download = 'MD_Mehedi_Hasan_Emon_resume.pdf';
+        
+          // Append the link to the document body
+          document.body.appendChild(link);
+        
+          // Trigger a click on the link element to start the download
+          link.click();
+        
+          // Remove the link from the document body
+          document.body.removeChild(link);
+        }
+        </script>
 
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
